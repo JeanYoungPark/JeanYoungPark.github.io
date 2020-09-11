@@ -8,24 +8,76 @@
 </head>
 <body>
     <div id="first" class="division">
-        <div class="container">
-            <div class="float">
-                <div class="img"><img src="images/profile.JPG"></div>
-            </div>
-            <div class="float">
-                <ul>
-                    <li>이름 (name) : <span>박 진영 (JeanYoung Park)</span></li>
-                    <li>생년월일 (Birth) : 1996.03.11</li>
-                    <li>이메일 (E-mail) : Jean.Young.Park.96@gmail.com</li>
-                    <li>핸드폰 (phone) : xxx-xxxx-xxxx</li>
-                    <li>git : <a href="https://github.com/JeanYoungPark" target="_blank">https://github.com/JeanYoungPark</a></li>
+        <div class="container after">
+            <div class="img"><img src="images/profile.JPG"></div>
+            <div class="info">
+                <h2>박 진영 (JeanYoung Park)</h2>
+                <p>
+                    생년월일 (Birth) : 1996.03.11<br>
+                    이메일 (E-mail) : Jean.Young.Park.96@gmail.com<br>
+                    핸드폰 (phone) : xxx-xxxx-xxxx<br>
+                    git : <a href="https://github.com/JeanYoungPark" target="_blank">https://github.com/JeanYoungPark</a>
+                </p>
+                <ul class="skills after">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>JQUERY</li>
+                    <li>PHP</li>
+                    <li>MYSQL</li>
+                    <li>NODEJS</li>
+                    <li>LINUX</li>
+                    <li>C/C++</li>
                 </ul>
             </div>
         </div>
-        <hr class="thick-line">
-        <hr class="thin-line">
     </div>
-    <div class="division"></div>
-    <div class="division"></div>
+    <div id="second" class="division">
+        <hr class="thick-line">
+        <h3 class="title">EXPERIENCES</h3>
+        <div class="container">
+            <div class="after">
+                <div class="info">
+                    <h3>아이보스 (i-boss)</h3>
+                    <p class="date">2017.08 ~ 2019.10</p>
+                    <p class="role">개발팀 프론트엔트 및 백엔드 개발자</p>
+                </div>
+                <ul class="list">
+                    <li>온라인마케팅 포털 / 마케팅 교육 서비스 (20~40명,개발팀 4~7명)</li>
+                    <li>사용자에게 제공할 신규 서비스 개발</li>
+                    <li>기존 서비스, 결제 프로세스 및 데이터베이스 유지보수 및 관리</li>
+                    <li class="skills">
+                        <h4>Skills Used</h4>
+                        <p>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JAVASCRIPT</span>
+                            <span>JQUERY</span>
+                            <span>PHP</span>
+                            <span>MYSQL</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!-- <hr class="thin-line"> -->
+        </div>
+    </div>
+    <div id="third" class="division">
+        <hr class="thick-line">
+        <h3 class="title">PROJECTS</h3>
+        <div class="container">
+            <div>
+                <span class="project_title">아이보스 쪽지 서비스 개발</span><br>
+                <span>참여율 : 40%</span><br><br>
+                <span>회원들간의 소통 및 관리자의 안내를 편리하게 제공하기 위해 개발</span><br>
+                <span>ajax, php, mysql, cron 을 사용하여 개발</span>
+            </div>
+            <div>
+                아이보스 현금 결제 방식의 캐시 개발<br>
+                참여율 : 70%<br>
+                사이트 내의 서비스와 외부 서비스를 구분하기 위해 기존 결제 방식 외의 충전식의 캐시결제 개발<br>
+                ajax, API, php, mysql <br>
+            </div>
+    </div>
 </body>
 </html>

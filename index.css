@@ -1,72 +1,34 @@
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, abbr, em, img, strong, hr, u, i, ul, li, label, table, caption, tr, th, td
-{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    list-style:none;
-    text-decoration:none;
-    box-sizing: border-box;
-}
-h1, h2, h3, h4, h5, h6, p, a, strong, u, i, ul, li, label {
-    font-family: 'Noto Sans KR', sans-serif;
-}
-.division {
-    width:1000px;
-    margin: 0 auto;
-}
-.division:after, .container:after{
-    display:block;
-    content: '';
-    clear:both;
-}
-.float {float:left;}
-.thick-line {
-    width: 100%;
-    height:4px;
-    background-color:#e6e6e2;
-    margin-bottom: 4px;
-}
-.thin-line {
-    width:100%;
-    height:2px;
-    background-color:#e6e6e2;
-}
-#first{
-    width:680px;
-}
-#first .container {
-    padding: 40px 20px;
-}
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, abbr, em, img, strong, hr, u, i, ul, li, label, table, caption, tr, th, td {margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; list-style:none; text-decoration:none; box-sizing: border-box;}
+h1, h2, h3, h4, h5, h6, p, a, strong, u, i, ul, li, label {font-family: 'Noto Sans KR', sans-serif;color:#2c2c2c;}
 
-#first .img {
-    width:250px;
-    height:250px;
-    border-radius:50%;
-    overflow:hidden;
-    margin-right: 50px;
-    top:10px;
-    left:10px;
-}
+/*--------common-------*/
+.division {width:1000px; margin: 0 auto;}
+.after:after{display:block; content: ''; clear:both;}
+.after > div, .after > ul, .after > li, .float {float:left;}
+.thick-line {width: 100%; height:4px; background-color:#f6f6f6;}
+.thin-line {width:100%; height:2px; background-color:#f6f6f6;}
 
-#first .img img {
-    width:100%;
-    height:auto;
-}
-
-#first ul {
-    padding-top: 30px;
-}
-
-#first ul li {
-    font-size: 15px;
-    font-weight: 300;
-    margin-bottom:20px; 
-}
-
-#first ul li span {
-    font-size:17px;
-    font-weight: 600;
-}
+/*--------first division-------*/
+#first {padding: 50px 0 40px 0;margin-bottom:20px;}
+#first .info {width:650px;}
+#first .img {width:300px; height:300px; margin-right: 50px; border-radius:50%; overflow:hidden;}
+#first .img img {width:100%; height:auto;}
+#first .info h2 {margin-bottom:20px;font-size:30px; font-weight: 600;}
+#first .info p {margin-bottom:10px;font-size: 15px;line-height:2;}
+#first .skills {padding-top:10px;}
+#first .skills li {padding:4px 8px; margin:0px 10px 10px 0;border-radius:7px;font-size:15px; background:#ff8e6e;color:#fff;}
+/*--------second division-------*/
+#second {padding-bottom:20px;}
+#second .container {padding: 0 20px;}
+#second .container > div {padding:40px 0;}
+#second .title {font-size:30px;font-weight:600;text-align:center;line-height:1.8;margin:40px 0 20px 0;}
+#second .info {width:350px;}
+#second .info h3{margin-bottom:5px;font-size:25px;}
+#second .info p {color:grey;}
+#second .info .date{font-size:18px;}
+#second .list li {list-style:initial;line-height:1.9;}
+#second .list .skills p span{display:inline-block;padding:2px;margin-right:5px;border-radius:5px;font-size:11px;background:#818181;color:#fff;}
+/*--------third division-------*/
+#third .container {padding: 0 20px;}
+#third .container > div {padding:40px 0;}
+#third .title {font-size:30px;font-weight:600;text-align:center;line-height:1.8;margin:40px 0 20px 0;}
