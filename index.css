@@ -1,5 +1,5 @@
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, abbr, em, img, strong, hr, u, i, ul, li, label, table, caption, tr, th, td {margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; list-style:none; text-decoration:none; box-sizing: border-box;}
-h1, h2, h3, h4, h5, h6, p, a, strong, u, i, ul, li, label {font-family: 'Noto Sans KR', sans-serif;color:#2c2c2c;}
+h1, h2, h3, h4, h5, h6, p, span,a, strong, u, i, ul, li, label {font-family: 'Noto Sans KR', sans-serif;color:#2c2c2c;}
 
 /*--------common-------*/
 .division {width:1000px; margin: 0 auto;}
@@ -29,6 +29,8 @@ h1, h2, h3, h4, h5, h6, p, a, strong, u, i, ul, li, label {font-family: 'Noto Sa
 #second .list li {list-style:initial;line-height:1.9;}
 #second .list .skills p span{display:inline-block;padding:2px;margin-right:5px;border-radius:5px;font-size:11px;background:#818181;color:#fff;}
 /*--------third division-------*/
-#third .container {padding: 0 20px;}
-#third .container > div {padding:40px 0;}
+#third .container {padding: 40px 20px;}
 #third .title {font-size:30px;font-weight:600;text-align:center;line-height:1.8;margin:40px 0 20px 0;}
+#third .project_title {font-size:25px;font-weight:600;margin-bottom:15px;}
+#third ul {padding-left:20px;}
+#third ul li {list-style: initial;}
