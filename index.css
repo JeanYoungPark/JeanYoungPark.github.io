@@ -96,8 +96,8 @@ label {
   overflow: hidden;
 }
 #first .img img {
-  width: 100%;
-  height: auto;
+  height: 100%;
+  width: auto;
 }
 #first .info h2 {
   margin-bottom: 20px;
@@ -114,7 +114,7 @@ label {
 }
 #first .skills li {
   padding: 4px 8px;
-  margin: 0px 10px 10px 0;
+  margin: 0px 10px 5px 0;
   border-radius: 7px;
   font-size: 15px;
   background: #ff8e6e;
