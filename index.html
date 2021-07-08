@@ -5,9 +5,12 @@
     <title>박진영 이력서</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
-    <div id="first" class="division">
+    <div id="top">
         <div class="container after">
             <div class="img"><img src="images/profile1.JPG"></div>
             <div class="info">
@@ -26,91 +29,105 @@
                 <ul class="skills after">
                     <li>PHP</li>
                     <li>CODEIGNITER</li>
-                    <li>MYSQL</li>
-                    <li>NODEJS</li>
-                    <li>C++</li>
                     <li>JAVA</li>
                     <li>JSP</li>
                     <li>SPRING BOOT</li>
+                    <li>MYSQL</li>
+                    <li>NODEJS</li>
                 </ul>
             </div>
         </div>
     </div>
-    <div id="second" class="division">
-        <hr class="thick-line">
-        <h3 class="title">EXPERIENCES</h3>
-        <div class="container">
-            <div class="after">
-                <div class="info">
-                    <h3>크르크</h3>
-                    <p class="date">2021.06.07 ~ 2021.07.07</p>
-                    <p class="role">프론트엔드</p>
-                </div>
-                <ul class="list">
-                    <li>크르크 퍼블리싱</li>
-                    <li>크르크 pc, 모바일에 맞추어 퍼블리싱</li>
-                    <li><a href="https://www.marketkrk.com/" target="_balnk">https://www.marketkrk.com/</a></li>
-                    <li class="skills">
-                        <h4>사용된 기술</h4>
-                        <p>
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JAVASCRIPT</span>
-                            <span>JQUERY</span>
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="after">
-                <div class="info">
-                    <h3>청년 미디어 타워</h3>
-                    <p class="date">2020.12 ~ 2020.12 (약 1주일)</p>
-                    <p class="role">프론트엔드</p>
-                </div>
-                <ul class="list">
-                    <li>청년미디어 타워 반응형 퍼블리싱 (퍼블리싱 2명)</li>
-                    <li>pc, 테블릿, 모바일웹에 맞추어 반응형으로 퍼블리싱</li>
-                    <li><a href="https://www.mediatower.or.kr/" target="_balnk">https://www.mediatower.or.kr/</a></li>
-                    <li class="skills">
-                        <h4>사용된 기술</h4>
-                        <p>
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JAVASCRIPT</span>
-                            <span>JQUERY</span>
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <hr class="thin-line">
-            <div class="after">
-                <div class="info">
-                    <h3>아이보스 (i-boss)</h3>
-                    <p class="date">2017.08 ~ 2019.10</p>
-                    <p class="role">개발팀 프론트엔드 및 백엔드 개발자</p>
-                </div>
-                <ul class="list">
-                    <li>온라인마케팅 포털 / 마케팅 교육 서비스 (20~40명,개발팀 4~7명)</li>
-                    <li>사용자에게 제공할 신규 서비스 개발</li>
-                    <li>기존 서비스, 결제 프로세스 및 데이터베이스 유지보수 및 관리</li>
-                    <li class="skills">
-                        <h4>사용된 기술</h4>
-                        <p>
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JAVASCRIPT</span>
-                            <span>JQUERY</span>
-                            <span>PHP</span>
-                            <span>MYSQL</span>
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <div id="menu">
+        <ul>
+            <li class="career on">경력기술서</li>
+            <li class="java_project">자바 프로젝트</li>
+            <li class="php_project">php 프로젝트</li>
+        </ul>
     </div>
-    <div id="third" class="division">
-        <hr class="thick-line">
+    <div id="career" class="division on">
+        <h3 class="title">CAREER</h3>
+            <div class="container">
+                <div class="after">
+                    <div class="info">
+                        <h3>크르크</h3>
+                        <p class="date">2021.06.07 ~ 2021.07.07</p>
+                        <p class="role">프론트엔드</p>
+                    </div>
+                    <ul class="list">
+                        <li>크르크 퍼블리싱</li>
+                        <li>크르크 pc, 모바일에 맞추어 퍼블리싱</li>
+                        <li><a href="https://www.marketkrk.com/" target="_balnk">https://www.marketkrk.com/</a></li>
+                        <li class="skills">
+                            <h4>사용된 기술</h4>
+                            <p>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JAVASCRIPT</span>
+                                <span>JQUERY</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="after">
+                    <div class="info">
+                        <h3>청년 미디어 타워</h3>
+                        <p class="date">2020.12 ~ 2020.12 (약 1주일)</p>
+                        <p class="role">프론트엔드</p>
+                    </div>
+                    <ul class="list">
+                        <li>청년미디어 타워 반응형 퍼블리싱 (퍼블리싱 2명)</li>
+                        <li>pc, 테블릿, 모바일웹에 맞추어 반응형으로 퍼블리싱</li>
+                        <li><a href="https://www.mediatower.or.kr/" target="_balnk">https://www.mediatower.or.kr/</a></li>
+                        <li class="skills">
+                            <h4>사용된 기술</h4>
+                            <p>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JAVASCRIPT</span>
+                                <span>JQUERY</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="after">
+                    <div class="info">
+                        <h3>아이보스 (i-boss)</h3>
+                        <p class="date">2017.08 ~ 2019.10</p>
+                        <p class="role">개발팀 프론트엔드 및 백엔드 개발자</p>
+                    </div>
+                    <ul class="list">
+                        <li>온라인마케팅 포털 / 마케팅 교육 서비스 (20~40명,개발팀 4~7명)</li>
+                        <li>사용자에게 제공할 신규 서비스 개발</li>
+                        <li>기존 서비스, 결제 프로세스 및 데이터베이스 유지보수 및 관리</li>
+                        <li class="skills">
+                            <h4>사용된 기술</h4>
+                            <p>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JAVASCRIPT</span>
+                                <span>JQUERY</span>
+                                <span>PHP</span>
+                                <span>MYSQL</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+    <div id="java_project" class="project division">
         <h3 class="title">PROJECTS</h3>
+        <div class="container">
+            <h3 class="project_title">직방 클론하기(개인 프로젝트)</h3>
+            <ul>
+                <li><a href="https://github.com/JeanYoungPark/zicBang.git">https://github.com/JeanYoungPark/zicBang.git</a></li>
+                <li>직방 웹사이트를 클론해보기</li>
+                <li>서울 시군구 json 파일을 파싱하여 db에 저장하고 ajax를 사용하여 특정 api에 값을 요청하여 화면을 구성한다.</li>
+                <li>작업기간 : 210630 ~ ing</li>
+                <li>사용된 기술 : html, jquery, springboot</li>
+            </ul>
+        </div>
+        <hr class="thin-line">
         <div class="container">
             <h3 class="project_title">29cm 클론하기(팀 프로젝트)</h3>
             <ul>
@@ -125,7 +142,7 @@
         <div class="container">
             <h3 class="project_title">스프링 부트와 aws로 혼자 웹 구현하기(개인 프로젝트)</h3>
             <ul>
-                <li><a href="http://ec2-3-35-110-128.ap-northeast-2.compute.amazonaws.com/">http://ec2-3-35-110-128.ap-northeast-2.compute.amazonaws.com/</a></li>
+                <li><a href="https://github.com/JeanYoungPark/freelec-springboot2-webservice.git" target="_balnk">https://github.com/JeanYoungPark/freelec-springboot2-webservice.git</a></li>
                 <li>소셜로그인 후 글쓰기, 삭제, 수정이 가능한 웹 사이트</li>
                 <li>구글로그인과 네이버로그인을 하여 게시글을 작성, 수정, 삭제 할 수 있고 스프링시큐리티를 이용하여 인증 및 권한 부여에 대해 접근을 제어하였다. aws와 TravisCI를 이용하여 배포 자동화 되도록 하였다.</li>
                 <li>aws서버에 배포하고 이를 자동화하는 과정이 쉽지는 않았다. 하지만 웹 서비스를 처음부터 끝까지 진행하면서 웹 서비스가 어떻게 구축이 되는지에 대한 이해도는 높아진 것 같아 굉장히 도움이 많이 되었던 프로젝트이다.</li>
@@ -136,7 +153,7 @@
         <div class="container">
             <h3 class="project_title">jsp로 게시판 만들기(개인 프로젝트)</h3>
             <ul>
-                <li><a href="http://jeanfree1.cafe24.com/main.jsp" target="_balnk">http://jeanfree1.cafe24.com/main.jsp</a></li>
+                <li><a href="https://github.com/JeanYoungPark/jsp_BulletinBoardSystem.git" target="_balnk">https://github.com/JeanYoungPark/jsp_BulletinBoardSystem.git</a></li>
                 <li>학교 수업에서 처음 배워보았던 jsp에 호기심이 생겨 만들어 본 게시판이다.</li>
                 <li>사용된 기술 : jsp, java, mysql</li>
             </ul>
@@ -151,7 +168,9 @@
                 <li>사용된 기술 : java</li>
             </ul>
         </div>
-        <hr class="thin-line">
+    </div>
+    <div id="php_project" class="project division">
+        <h3 class="title">PROJECTS</h3>
         <div class="container">
             <h3 class="project_title">문자 및 알림 템플릿 개발</h3>
             <ul>

@@ -54,9 +54,35 @@ label {
 }
 
 /*--------common-------*/
+#menu {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+#menu ul {
+  display: flex;
+}
+#menu ul li {
+  width: 50%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #b2b2b2;
+  line-height: 40px;
+  color: #b2b2b2;
+  cursor: pointer;
+}
+#menu ul li.on {
+  border-bottom: 1px solid #2c2c2c;
+  color: #2c2c2c;
+}
 .division {
   width: 1000px;
   margin: 0 auto;
+  display:none;
+}
+.division.on {
+  display:block;
 }
 .after:after {
   display: block;
@@ -80,81 +106,83 @@ label {
   background-color: #f6f6f6;
 }
 
-/*--------first division-------*/
-#first {
+/*--------top division-------*/
+#top {
+  width:1000px;
+  margin:0 auto;
   padding: 50px 0 40px 0;
   margin-bottom: 20px;
 }
-#first .info {
+#top .info {
   width: 650px;
 }
-#first .img {
+#top .img {
   width: 250px;
   height: 250px;
   margin-right: 50px;
   border-radius: 50%;
   overflow: hidden;
 }
-#first .img img {
+#top .img img {
   height: 100%;
   width: auto;
 }
-#first .info h2 {
+#top .info h2 {
   margin-bottom: 20px;
   font-size: 30px;
   font-weight: 600;
 }
-#first .info p {
+#top .info p {
   margin-bottom: 10px;
   font-size: 15px;
   line-height: 2;
 }
-#first .skills {
+#top .skills {
   padding-top: 10px;
 }
-#first .skills li {
+#top .skills li {
   padding: 4px 8px;
   margin: 0px 10px 5px 0;
   border-radius: 7px;
   font-size: 15px;
-  background: #ff8e6e;
+  background: #ff744d;
   color: #fff;
 }
-/*--------second division-------*/
-#second {
+/*--------career division-------*/
+#career {
   padding-bottom: 20px;
 }
-#second .container {
+#career .container {
   padding: 0 20px;
 }
-#second .container > div {
+#career .container > div {
   padding: 40px 0;
 }
-#second .title {
+#career .title {
   font-size: 30px;
   font-weight: 600;
   text-align: center;
   line-height: 1.8;
   margin: 40px 0 20px 0;
 }
-#second .info {
+#career .info {
   width: 350px;
 }
-#second .info h3 {
+#career .info h3 {
   margin-bottom: 5px;
   font-size: 25px;
 }
-#second .info p {
+#career .info p {
   color: grey;
 }
-#second .info .date {
+#career .info .date {
   font-size: 18px;
 }
-#second .list li {
+#career .list li {
   list-style: initial;
   line-height: 1.9;
 }
-#second .list .skills p span {
+#career .list .skills p span {
   display: inline-block;
   padding: 2px;
   margin-right: 5px;
@@ -163,25 +191,25 @@ label {
   background: #818181;
   color: #fff;
 }
-/*--------third division-------*/
-#third .container {
+/*--------project division-------*/
+.project .container {
   padding: 40px 20px;
 }
-#third .title {
+.project .title {
   font-size: 30px;
   font-weight: 600;
   text-align: center;
   line-height: 1.8;
   margin: 40px 0 20px 0;
 }
-#third .project_title {
+.project .project_title {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 15px;
 }
-#third ul {
+.project ul {
   padding-left: 20px;
 }
-#third ul li {
+.project ul li {
   list-style: initial;
 }
