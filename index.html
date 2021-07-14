@@ -5,9 +5,10 @@
     <title>박진영 이력서</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="js/bxslider/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/bxslider/jquery.bxslider.min.js"></script>
 </head>
 <body>
     <div id="top">
@@ -81,7 +82,10 @@
         </div>
         <hr class="thin-line">
         <div class="container">
-            <h3 class="project_title">스프링 부트와 aws로 혼자 웹 구현하기(개인 프로젝트)</h3>
+            <h3 class="project_title">
+                스프링 부트와 aws로 혼자 웹 구현하기(개인 프로젝트)
+                <span class="show_slide" data=0><i class="fas fa-angle-down"></i> 클릭</span>
+            </h3>
             <ul>
                 <li><a href="https://github.com/JeanYoungPark/freelec-springboot2-webservice.git" target="_balnk">https://github.com/JeanYoungPark/freelec-springboot2-webservice.git</a></li>
                 <li>소셜로그인 후 글쓰기, 삭제, 수정이 가능한 웹 사이트</li>
@@ -89,6 +93,16 @@
                 <li>aws서버에 배포하고 이를 자동화하는 과정이 쉽지는 않았다. 하지만 웹 서비스를 처음부터 끝까지 진행하면서 웹 서비스가 어떻게 구축이 되는지에 대한 이해도는 높아진 것 같아 굉장히 도움이 많이 되었던 프로젝트이다.</li>
                 <li>사용된 기술 : springboot, mysql, mustache, aws</li>
             </ul>
+            <div class="slider">
+                <div class="slider_wrapper">
+                    <div><img src="images/java/freelec/main.PNG" title="메인"></div>
+                    <div><img src="images/java/freelec/googleLogin.PNG" title="구글 로그인"></div>
+                    <div><img src="images/java/freelec/naverLogin.PNG" title="네이버 로그인"></div>
+                    <div><img src="images/java/freelec/write.PNG" title="글쓰기"></div>
+                    <div><img src="images/java/freelec/myView.PNG" title="게시글 보기"></div>
+                    <div><img src="images/java/freelec/view.PNG" title="다른 사람의 게시글 보기"></div>
+                </div>
+            </div>
         </div>
         <hr class="thin-line">
         <div class="container">
@@ -245,5 +259,6 @@
                 </div>
             </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>

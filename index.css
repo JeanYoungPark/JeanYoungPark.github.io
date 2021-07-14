@@ -203,9 +203,24 @@ label {
   margin: 40px 0 20px 0;
 }
 .project .project_title {
+  display:flex;
+  align-items: center;
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 15px;
+}
+.project .project_title .show_slide {
+  font-size:15px;
+  font-weight:normal;
+  color:#fff;
+  border-radius: 7px;
+  padding:5px 10px;
+  margin-left:10px;
+  cursor:pointer;
+  background: #ff744d;
+}
+.project .project_title .show_slide i {
+  color:#fff;
 }
 .project ul {
   padding-left: 20px;
@@ -213,3 +228,6 @@ label {
 .project ul li {
   list-style: initial;
 }
+/*---------slider--------*/
+.slider {display:none;margin-top:30px;}
+.slider .bx-wrapper .bx-caption span {text-align:center;}
