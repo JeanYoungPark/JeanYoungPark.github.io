@@ -237,7 +237,8 @@ label {
   display: none;
   margin-top: 30px;
 }
-.slider .img img {
+.slider .img img,
+.slider .img video {
   width: 100%;
 }
 .slider .bx-wrapper .bx-caption span {

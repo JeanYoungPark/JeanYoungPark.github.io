@@ -14,6 +14,7 @@ $(document).ready(function () {
   //클릭버튼 클릭시 슬라이드 노출
   $(".show_slide").on("click", function() {
     var slider = $(this).parents(".container").find(".slider");
+    var video = $(this).parents(".container").find("video");
     slider.toggle();
     
     if($(this).attr("data") == 0) {
@@ -22,6 +23,10 @@ $(document).ready(function () {
         captions:true,
         pager:false
       });
+    }
+
+    if(video.length){
+      document.getElementById(video.attr('id')).pause();
     }
   });
 
