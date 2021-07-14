@@ -79,10 +79,10 @@ label {
 .division {
   width: 1000px;
   margin: 0 auto;
-  display:none;
+  display: none;
 }
 .division.on {
-  display:block;
+  display: block;
 }
 .after:after {
   display: block;
@@ -108,8 +108,8 @@ label {
 
 /*--------top division-------*/
 #top {
-  width:1000px;
-  margin:0 auto;
+  width: 1000px;
+  margin: 0 auto;
   padding: 50px 0 40px 0;
   margin-bottom: 20px;
 }
@@ -203,44 +203,57 @@ label {
   margin: 40px 0 20px 0;
 }
 .project .project_title {
-  display:flex;
+  display: flex;
   align-items: center;
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 15px;
 }
 .project .project_title .show_slide {
-  font-size:15px;
-  font-weight:normal;
-  color:#fff;
+  font-size: 15px;
+  font-weight: normal;
+  color: #fff;
   border-radius: 7px;
-  padding:5px 10px;
-  margin-left:10px;
-  cursor:pointer;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
   background: #ff744d;
 }
 .project .project_title .show_slide i {
-  color:#fff;
+  color: #fff;
 }
 .project ul {
   padding-left: 20px;
 }
 .project ul li {
   list-style: initial;
+  margin-bottom: 7px;
+}
+.project ul li a {
+  text-decoration: revert;
 }
 /*---------slider--------*/
-.slider {display:none;margin-top:30px;}
-.slider .bx-wrapper .bx-caption span {text-align:center;}
+.slider {
+  display: none;
+  margin-top: 30px;
+}
+.slider .img img {
+  width: 100%;
+}
+.slider .bx-wrapper .bx-caption span {
+  text-align: center;
+}
 /*---------top button--------*/
 #top_btn {
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  width:50px;
-  height:50px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
   border-radius: 7px;
-  background:rgba(80, 80, 80, 0.75);color: #fff;
+  background: rgba(80, 80, 80, 0.75);
+  color: #fff;
   text-align: center;
   line-height: 50px;
-  cursor:pointer;
+  cursor: pointer;
 }
