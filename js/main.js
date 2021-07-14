@@ -15,6 +15,15 @@ $(document).ready(function () {
   $(".show_slide").on("click", function() {
     var slider = $(this).parents(".container").find(".slider");
     var video = $(this).parents(".container").find("video");
+
+    if($(this).find("i").hasClass("fa-angle-down")){
+      $(this).find("i").removeClass("fa-angle-down");
+      $(this).find("i").addClass("fa-angle-up");
+    }else{
+      $(this).find("i").removeClass("fa-angle-up");
+      $(this).find("i").addClass("fa-angle-down");
+    }
+
     slider.toggle();
     
     if($(this).attr("data") == 0) {
