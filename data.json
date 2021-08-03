@@ -1,5 +1,20 @@
 {
     "photogram":{
-        "period":"210705 ~ 210719"
+        "lang":"java",
+        "period":"210705 ~ 210719",
+        "slide": [
+            "login.png",
+            "facebookLogin.png",
+            "join.png",
+            "modify.png",
+            "upload.png",
+            "myStory.png",
+            "likeComment.png"
+        ],
+        "video":"photogram.mp4"
+    },
+    "zicBang":{
+        "lang":"java",
+        "period":"210630 ~ 210723"
     }
 }
