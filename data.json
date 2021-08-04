@@ -19,7 +19,44 @@
         "description":"인스타그램 클론 프로젝트로 스프링 시큐리티를 이용하여 회원가입과 로그인을 제어하고, 인스타그램과 같이 팔로우, 좋아요, 게시글 작성 그리고 댓글 작성 등의 기능을 제공한다."
     },
     "zicBang":{
+        "name":"ZicBang",
         "lang":"java",
-        "period":"210630 ~ 210723"
+        "period":"210630 ~ 210723",
+        "git":"https://github.com/JeanYoungPark/zicBang.git",
+        "fe":"html, jquery",
+        "be":"springboot, mysql",
+        "slide": [
+            "main.png",
+            "map.png",
+            "list01.png",
+            "list02.png"
+        ],
+        "video":"",
+        "description":"직방 클론 프로젝트로 ApplicationRunner를 상속받아 빌드시에 서울의 시군구 json 파일을 파싱하여 db에 저장하고 ajax를 사용하여 특정 api에 값을 요청하여 화면을 구성한다."
+    },
+    "covid":{
+        "name":"COVID19",
+        "lang":"java",
+        "period":"210707",
+        "git":"https://github.com/JeanYoungPark/covid19-status-crawling.git",
+        "fe":"thymeleaf",
+        "be":"springboot, mysql",
+        "slide": [
+            "covid.png"
+        ],
+        "video":"",
+        "description":"COVID19 현황관리 사이트를 크롤링해보는 프로젝트로 jsoup을 사용하여 html을 크롤링 하여 분석하고 화면을 구성하였다."
+    },
+    "29cm":{
+        "name":"29cm",
+        "lang":"java",
+        "period":"210606 ~ ing",
+        "git":"",
+        "fe":"react",
+        "be":"springboot, mysql",
+        "slide": [
+        ],
+        "video":"",
+        "description":"29cm 웹 사이트 클론 프로젝트로 객체간의 매핑을 도와주는 MapStruct 라이브러리를 사용하였고 swagger를 이용하여 api를 문서화하고 공유하여 관리하였다."
     }
 }
