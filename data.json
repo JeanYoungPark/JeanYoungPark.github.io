@@ -1,4 +1,16 @@
 {
+    "chatMe":{
+        "name":"ChatMe",
+        "lang":"java",
+        "period":"210727 ~ ing",
+        "git":"https://github.com/JeanYoungPark/chatMe.git",
+        "fe":"jsp, jquery",
+        "be":"springboot, mariadb",
+        "slide": [
+        ],
+        "video":"",
+        "description":"웹소켓을 이용하여 로그인 한 사용자와 실시간으로 채팅을 할 수 있는 웹 사이트이다."
+    },
     "photogram":{
         "name":"Photogram",
         "lang":"java",
@@ -58,5 +70,23 @@
         ],
         "video":"",
         "description":"29cm 웹 사이트 클론 프로젝트로 객체간의 매핑을 도와주는 MapStruct 라이브러리를 사용하였고 swagger를 이용하여 api를 문서화하고 공유하여 관리하였다."
+    },
+    "freelec":{
+        "name":"스프링부트와 aws로 혼자 웹 구현하기",
+        "lang":"java",
+        "period":"",
+        "git":"https://github.com/JeanYoungPark/freelec-springboot2-webservice.git",
+        "fe":"mustache",
+        "be":"springboot, mysql, aws",
+        "slide": [
+            "main.png",
+            "googleLogin.png",
+            "naverLogin.png",
+            "write.png",
+            "myView.png",
+            "view.png"
+        ],
+        "video":"",
+        "description":"구글, 네이버 로그인을 할 수 있고 게시글 작성, 수정, 삭제가 가능하고 aws와 travisCI를 이용하여 배포 자동화 되도록 해보았다. 과정이 쉽지는 않았지만 웹 서버 구축에 대해 조금 더 자세히 알게 된 것 같다."
     }
 }
