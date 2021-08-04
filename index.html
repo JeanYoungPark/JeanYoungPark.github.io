@@ -1,174 +1,4 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>박진영 이력서</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="stylesheet" href="js/bxslider/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/bxslider/jquery.bxslider.min.js"></script>
-</head>
-<body>
-    <div id="top">
-        <div class="container after">
-            <div class="img"><img src="images/profile1.JPG"></div>
-            <div class="info">
-                <h2>박 진영 (JeanYoung Park)</h2>
-                <p>
-                    생년월일 (Birth) : 1996.03.11<br>
-                    이메일 (E-mail) : Jean.Young.Park.96@gmail.com<br>
-                    git : <a href="https://github.com/JeanYoungPark" target="_blank">https://github.com/JeanYoungPark</a>
-                </p>
-                <ul class="skills after">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JAVASCRIPT</li>
-                    <li>JQUERY</li>
-                </ul>
-                <ul class="skills after">
-                    <li>PHP</li>
-                    <li>CODEIGNITER</li>
-                    <li>JAVA</li>
-                    <li>JSP</li>
-                    <li>SPRING BOOT</li>
-                    <li>MYSQL</li>
-                    <li>NODEJS</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div id="menu">
-        <ul>
-            <li class="java_project on">자바 프로젝트</li>
-            <li class="php_project">php 프로젝트</li>
-            <li class="career">경력기술서</li>
-        </ul>
-    </div>
-    <div id="java_project" class="project division on">
-        <h3 class="title">PROJECTS</h3>
-        <div class="container">
-            <h3 class="project_title">
-                chatMe(개인 프로젝트)
-            </h3>
-            <ul>
-                <li><a href="https://github.com/JeanYoungPark/chatMe.git" target="_blank">https://github.com/JeanYoungPark/chatMe.git</a></li>
-                <li>웹소켓 챗미 프로젝트</li>
-                <li>웹소켓을 이용하여 로그인 된 사용자와 실시간으로 채팅을 하는 웹 사이트</li>
-                <li>작업기간 : 210727 ~ ing</li>
-                <li>사용된 기술 : jsp, jquery, springboot</li>
-            </ul>
-        </div>
-        <hr class="thin-line">
-        <div class="container">
-            <h3 class="project_title">
-                포토그램(개인 프로젝트)
-                <span class="show_slide" data=0><i class="fas fa-angle-down"></i> 클릭</span>
-            </h3>
-            <ul>
-                <li><a href="https://github.com/JeanYoungPark/photogram.git" target="_blank">https://github.com/JeanYoungPark/photogram.git</a></li>
-                <li>인스타그램 클론 프로젝트</li>
-                <li>스프링시큐리티를 이용하여 회원관련 로직을 제어하고 팔로우, 댓글, 게시글 작성 등의 기능을 제공하는 웹 사이트이다.</li>
-                <li>전에 진행 했던 몇번의 프로젝트를 통해 개념이 자리잡혔던 프로젝트이다.<br>특히 이미지 업로드는 개발해본적이 없는데 deploy 관련된 이슈를 알게되어서 좋은 경험이었다.</li>
-                <li>작업기간 : 210705 ~ 210719</li>
-                <li>사용된 기술 : jsp, jquery, springboot</li>
-            </ul>
-            <div class="slider">
-                <div class="slider_wrapper">
-                    <div><img src="images/java/photogram/login.PNG" title="로그인"></div>
-                    <div><img src="images/java/photogram/facebookLogin.PNG" title="페이스북 로그인"></div>
-                    <div><img src="images/java/photogram/join.PNG" title="회원가입"></div>
-                    <div><img src="images/java/photogram/modify.PNG" title="회원정보 수정"></div>
-                    <div><img src="images/java/photogram/upload.PNG" title="사진 업로드"></div>
-                    <div><img src="images/java/photogram/myStory.PNG" title="내 스토리"></div>
-                    <div><img src="images/java/photogram/likeComment.PNG" title="내가 구독한 사용자에게 좋아요와 댓글달기"></div>
-                </div>
-            </div>
-            <div class="slider">
-                <div class="img">
-                    <video id="photogram" controls>
-                        <source src="images/java/photogram/Photogram.mp4">
-                    </video>
-                </div>
-            </div>
-        </div>
-        <hr class="thin-line">
-        <div class="container">
-            <h3 class="project_title">
-                직방 클론하기(개인 프로젝트)
-                <span class="show_slide" data=0><i class="fas fa-angle-down"></i> 클릭</span>
-            </h3>
-            <ul>
-                <li><a href="https://github.com/JeanYoungPark/zicBang.git" target="_blank">https://github.com/JeanYoungPark/zicBang.git</a></li>
-                <li>직방 웹사이트를 클론 프로젝트</li>
-                <li>서울 시군구 json 파일을 파싱하여 db에 저장하고 ajax를 사용하여 특정 api에 값을 요청하여 화면을 구성한다. <br/>(생각보다 ajax만 너무 많이 사용하게 되어서 아파트 영역 완료후 중단)</li>
-                <li>작업기간 : 210630 ~ 210723</li>
-                <li>사용된 기술 : html, jquery, springboot</li>
-            </ul>
-            <div class="slider">
-                <div class="slider_wrapper">
-                    <div><img src="images/java/zicBang/main.PNG" title="메인"></div>
-                    <div><img src="images/java/zicBang/map.PNG" title="아파트 탭 첫 화면"></div>
-                    <div><img src="images/java/zicBang/list01.PNG" title="서울특별시 내 각 버튼에 해당하는 정보 (서대문구)"></div>
-                    <div><img src="images/java/zicBang/list02.PNG" title="서울특별시 내 각 버튼에 해당하는 정보 (구로구)"></div>
-                </div>
-            </div>
-        </div>
-        <hr class="thin-line">
-        <div class="container">
-            <h3 class="project_title">
-                COVID19 현황 크롤링(개인 프로젝트)
-                <span class="show_slide" data=0><i class="fas fa-angle-down"></i> 클릭</span>
-            </h3>
-            <ul>
-                <li><a href="https://github.com/JeanYoungPark/covid19-status-crawling.git" target="_blank">https://github.com/JeanYoungPark/covid19-status-crawling.git</a></li>
-                <li>COVID19 현황 크롤링</li>
-                <li>jsoup을 이용하여 COVID19 현황 관리 사이트에서 크롤링 하여 정보를 가져와 화면을 구성하였다.</li>
-                <li>크롤링을 해본적이 없어 멀게 느껴졌었는데 직접해보니 코드를 분석하여 화면에 보여준다는 것에서 재미를 느꼈다. </li>
-                <li>작업기간 : 210707 (1일)</li>
-                <li>사용된 기술 : thymeleaf, mysql</li>
-            </ul>
-            <div class="slider">
-                <div class="img"><img src="images/java/covid/covid.PNG" title="메인"></div>
-            </div>
-        </div>
-        <hr class="thin-line">
-        <div class="container">
-            <h3 class="project_title">29cm 클론하기(팀 프로젝트)</h3>
-            <ul>
-                <li>29cm 웹사이트를 클론 프로젝트</li>
-                <li>인원 : 4명 (프론트엔드 개발자 2, 백엔드 개발자 2)</li>
-                <li>프론트엔드는 react를 사용하며 백엔드는 스프링부트를 사용하고 api를 통해 데이터를 주고받는 형식의 웹 사이트이며 swagger를 이용하여 api document관리</li>
-                <li>작업기간 : 210606 ~ ing</li>
-                <li>사용된 기술 : react, springboot, mysql</li>
-            </ul>
-        </div>
-        <hr class="thin-line">
-        <div class="container">
-            <h3 class="project_title">
-                스프링 부트와 aws로 혼자 웹 구현하기(개인 프로젝트)
-                <span class="show_slide" data=0><i class="fas fa-angle-down"></i> 클릭</span>
-            </h3>
-            <ul>
-                <li><a href="https://github.com/JeanYoungPark/freelec-springboot2-webservice.git" target="_balnk">https://github.com/JeanYoungPark/freelec-springboot2-webservice.git</a></li>
-                <li>소셜로그인 후 글쓰기, 삭제, 수정이 가능한 웹 사이트</li>
-                <li>구글로그인과 네이버로그인을 하여 게시글을 작성, 수정, 삭제 할 수 있고 스프링시큐리티를 이용하여 인증 및 권한 부여에 대해 접근을 제어하였다. aws와 TravisCI를 이용하여 배포 자동화 되도록 하였다.</li>
-                <li>aws서버에 배포하고 이를 자동화하는 과정이 쉽지는 않았다. 하지만 웹 서비스를 처음부터 끝까지 진행하면서 웹 서비스가 어떻게 구축이 되는지에 대한 이해도는 높아진 것 같아 굉장히 도움이 많이 되었던 프로젝트이다.</li>
-                <li>사용된 기술 : springboot, mysql, mustache, aws</li>
-            </ul>
-            <div class="slider">
-                <div class="slider_wrapper">
-                    <div><img src="images/java/freelec/main.PNG" title="메인"></div>
-                    <div><img src="images/java/freelec/googleLogin.PNG" title="구글 로그인"></div>
-                    <div><img src="images/java/freelec/naverLogin.PNG" title="네이버 로그인"></div>
-                    <div><img src="images/java/freelec/write.PNG" title="글쓰기"></div>
-                    <div><img src="images/java/freelec/myView.PNG" title="게시글 보기"></div>
-                    <div><img src="images/java/freelec/view.PNG" title="다른 사람의 게시글 보기"></div>
-                </div>
-            </div>
-        </div>
+﻿<!--
         <hr class="thin-line">
         <div class="container">
             <h3 class="project_title">
@@ -277,98 +107,260 @@
             </ul>
         </div> 
     </div>
-    <div id="career" class="division">
-        <h3 class="title">CAREER</h3>
-            <div class="container">
-                <div class="after">
-                    <div class="info">
-                        <h3>무아</h3>
-                        <p class="date">2021.07.19 ~</p>
-                        <p class="role">웹개발</p>
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박진영 이력서</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="js/bxslider/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/bxslider/jquery.bxslider.min.js"></script>
+</head>
+<body>
+<header class="header">
+    <div>
+        <h1><a href="index.html">Jean Young Park</a></h1>
+        <nav class="navbar">
+            <div id="navigation">
+                <div class="profile-section">
+                    <div class="img"><img src="images/profile.jpg"></div>
+                    <div class="bio">
+                        안녕하세요 즐거운 개발자 박진영입니다 :)<br>저의 포트폴리오 사이트에 오신걸 환영합니다! 
                     </div>
-                    <ul class="list">
-                        <li>무아 서비스 개발</li>
-                        <li>무아 서비스에 필요한 기능을 개발</li>
-                        <li><a href="http://mooasi.cafe24.com/" target="_balnk">http://mooasi.cafe24.com/</a></li>
-                        <li class="skills">
-                            <h4>사용 기술</h4>
-                            <p>
-                                <span>PHP</span>
-                                <span>JAVASCRIPT</span>
-                                <span>JQUERY</span>
-                            </p>
-                        </li>
+                    <ul class="social-list">
+                        <li><a href="https://rightful-smile-573.notion.site/2702fe629332493d938a0ddc571f15fe"><img src="images/icons/notion.png"/></a></li>
+                        <li><a href="https://github.com/JeanYoungPark"><img src="images/icons/github.png"/></a></li>
                     </ul>
+                    <hr>
                 </div>
-                <div class="after">
-                    <div class="info">
-                        <h3>크르크</h3>
-                        <p class="date">2021.06.07 ~ 2021.07.07</p>
-                        <p class="role">프론트엔드</p>
-                    </div>
-                    <ul class="list">
-                        <li>크르크 퍼블리싱</li>
-                        <li>크르크 pc, 모바일에 맞추어 퍼블리싱</li>
-                        <li><a href="https://www.marketkrk.com/" target="_balnk">https://www.marketkrk.com/</a></li>
-                        <li class="skills">
-                            <h4>사용 기술</h4>
-                            <p>
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JAVASCRIPT</span>
-                                <span>JQUERY</span>
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="after">
-                    <div class="info">
-                        <h3>청년 미디어 타워</h3>
-                        <p class="date">2020.12 ~ 2020.12 (약 1주일)</p>
-                        <p class="role">프론트엔드</p>
-                    </div>
-                    <ul class="list">
-                        <li>청년미디어 타워 반응형 퍼블리싱 (퍼블리싱 2명)</li>
-                        <li>pc, 테블릿, 모바일웹에 맞추어 반응형으로 퍼블리싱</li>
-                        <li><a href="https://www.mediatower.or.kr/" target="_balnk">https://www.mediatower.or.kr/</a></li>
-                        <li class="skills">
-                            <h4>사용 기술</h4>
-                            <p>
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JAVASCRIPT</span>
-                                <span>JQUERY</span>
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="after">
-                    <div class="info">
-                        <h3>아이보스 (i-boss)</h3>
-                        <p class="date">2017.08 ~ 2019.10</p>
-                        <p class="role">개발팀 프론트엔드 및 백엔드 개발자</p>
-                    </div>
-                    <ul class="list">
-                        <li>온라인마케팅 포털 / 마케팅 교육 서비스 (20~40명,개발팀 4~7명)</li>
-                        <li>사용자에게 제공할 신규 서비스 개발</li>
-                        <li>기존 서비스, 결제 프로세스 및 데이터베이스 유지보수 및 관리</li>
-                        <li><a href="https://www.i-boss.co.kr/" target="_balnk">https://www.i-boss.co.kr/</a></li>
-                        <li class="skills">
-                            <h4>사용 기술</h4>
-                            <p>
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JAVASCRIPT</span>
-                                <span>JQUERY</span>
-                                <span>PHP</span>
-                                <span>MYSQL</span>
-                            </p>
-                        </li>
-                    </ul>
+                <ul class="navbar-list">
+                    <li>
+                        <a class="active" href="index.html">About Me</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="career.html">Career</a>
+                    </li>
+                </ul>
+                <div class="dark-mode-toogle">
+                    <hr>
+                    <h4>Dark Mode</h4>
+                    <input class="toggle" id="darkmode" type="checkbox">
+                    <label class="toggle-btn" for="darkmode"></label>
                 </div>
             </div>
+        </nav>
     </div>
-    <div id="top_btn">TOP</div>
-    <script src="js/main.js"></script>
+</header>
+<div class="main-wrapper">
+    <section class="about-me-section">
+        <div class="container">
+            <div class="col">
+                <h2>Jean Young Park</h2>
+                <div class="tagline">Junior Backend Developer</div>
+                <div class="bio">
+                    즐거운 개발자 박진영입니다 :)<br>
+                    저의 개발기록은 github와 notion에 기록되어있습니다. 저의 프로젝트가 궁금하시다면 <a href="portfolio.html">Portfolio</a>를 확인해주세요!
+                </div>
+                <a class="btn" href="">View Portfolio</a>
+            </div>
+            <div class="col">
+                <img src="images/profile1.jpg">
+            </div>
+        </div>
+    </section>
+    <section class="overview-section">
+        <div class="container">
+            <h2 class="section-title">What I can do</h2>
+            <div class="row">
+                <div class="item">
+                    <div class="item-inner">
+                        <div class="item-icon">
+                            <img src="images/icons/javascript.png">
+                            <img src="images/icons/jquery.png">
+                        </div>
+                        <h3>Vanilla Javascript & jquery</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-inner">
+                        <div class="item-icon">
+                            <img src="images/icons/nodejs.png">
+                        </div>
+                        <h3>Node.js</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-inner">
+                        <div class="item-icon">
+                            <img src="images/icons/php.png">
+                        </div>
+                        <h3>PHP</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-inner">
+                        <div class="item-icon">
+                            <img src="images/icons/html.png">
+                            <img src="images/icons/css.png">
+                        </div>
+                        <h3>HTML & CSS</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-inner">
+                        <div class="item-icon">
+                            <img src="images/icons/java.png">
+                            <img src="images/icons/spring.png">
+                        </div>
+                        <h3>Java & Spring Boot</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-inner">
+                        <div class="item-icon">
+                            <img src="images/icons/mysql.png">
+                            <img src="images/icons/mariadb.png">
+                        </div>
+                        <h3>MySql & MariaDB</h3>
+                        <div class="item-desc"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container"><hr></div>
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-cards row">
+                <div class="col">
+                    <div class="card">
+                        <div class="row">
+                            <div class="img">
+                                <img src="images/java/photogram/photogram_mock.jpg">
+                            </div>
+                            <div class="card-body">
+                                <h5>Photogram</h5>
+                                <p>
+                                    기간 : 210705 ~ 210719<br>
+                                    FE : jsp, jquery<br>
+                                    BE : springboot, MariaDB<br>
+                                </p>
+                                <p><small>개인 프로젝트</small></p>
+                            </div>
+                        </div>
+                        <div class="link-mask">
+                            <div class="link-mask-text">
+                                <span class="btn" data="photogram">View</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="row">
+                            <div class="img">
+                                <img src="images/java/zicBang/zicBang_mock.jpg">
+                            </div>
+                            <div class="card-body">
+                                <h5>zicBang</h5>
+                                <p>
+                                    기간 : 210630 ~ 210723<br>
+                                    FE : html, jquery<br>
+                                    BE : springboot
+                                </p>
+                                <p><small>개인 프로젝트</small></p>
+                            </div>
+                        </div>
+                        <div class="link-mask">
+                            <div class="link-mask-text">
+                                <a class="btn" data="zicBang">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="row">
+                            <div class="img">
+                                <img src="images/java/covid/covid.PNG">
+                            </div>
+                            <div class="card-body">
+                                <h5>COVID19 현황 크롤링</h5>
+                                <p>
+                                    기간 : 210707<br>
+                                    FE : thymeleaf<br>
+                                    BE : springboot, mysql
+                                </p>
+                                <p><small>개인 프로젝트</small></p>
+                            </div>
+                        </div>
+                        <div class="link-mask">
+                            <div class="link-mask-text">
+                                <a class="btn" data="covid">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="row">
+                            <div class="img">
+                                <img src="https://via.placeholder.com/200">
+                            </div>
+                            <div class="card-body">
+                                <h5>29cm</h5>
+                                <p>
+                                    기간 : 210606 ~ ing<br>
+                                    FE : react<br>
+                                    BE : springboot, mysql
+                                </p>
+                                <p><small>팀 프로젝트</small></p>
+                            </div>
+                        </div>
+                        <div class="link-mask">
+                            <div class="link-mask-text">
+                                <a class="btn" data="29cm">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-btn">
+                <a href="portfolio.html">View Portfolio</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <samll class="copyright">© 2021. Jean Young </samll>
+    </footer>
+    <div class="popup">
+        <div class="wrapper">
+            <div class="loading"><img src="images/icons/loading.gif"></div>
+            <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+            <div class="slider">
+                <div class="slider_wrapper">
+                </div>
+            </div>
+            <div class="img"></div>
+            <div class="video"></div>
+            <div class="introduce">
+                <h5 class="title"></h5>
+                <div class="info"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/main.js"></script>
 </body>
 </html>

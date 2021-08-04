@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박진영 이력서</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="js/bxslider/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/bxslider/jquery.bxslider.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <h1><a href="index.html">Jean Young Park</a></h1>
+            <nav class="navbar">
+                <div id="navigation">
+                    <div class="profile-section">
+                        <div class="img"><img src="images/profile.jpg"></div>
+                        <div class="bio">
+                            안녕하세요. 저는 풀스택 개발자가 되고싶은 백앤드 개발자 박진영입니다 :)<br>저의 포트폴리오 사이트에 오신걸 환영합니다. 
+                        </div>
+                        <ul class="social-list">
+                            <li><a href=""><img src="images/icons/notion.png"/></a></li>
+                            <li><a href="https://github.com/JeanYoungPark"><img src="images/icons/github.png"/></a></li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <ul class="navbar-list">
+                        <li>
+                            <a href="index.html">About Me</a>
+                        </li>
+                        <li>
+                            <a class="active" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="career.html">Career</a>
+                        </li>
+                    </ul>
+                    <div class="dark-mode-toogle">
+                        <hr>
+                        <h4>Dark Mode</h4>
+                        <input class="toggle" id="darkmode" type="checkbox">
+                        <label class="toggle-btn" for="darkmode"></label>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="main-wrapper">
+        <section class="cta-section">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <div class="intro">
+                    <p>지금까지의 프로젝트들을 ....</p>
+                </div>
+            </div>
+        </section>
+        <section class="projects-list">
+            <div class="container">
+                <div class="tabs">
+                    <ul>
+                        <li class="active" data-filter="all">All</li>
+                        <li data-filter="frontend">frontend</li>
+                        <li data-filter="backend">backend</li>
+                    </ul>
+                </div>
+                <div class="project-cards row">
+                    <div class="col backend">
+                        <div class="card">
+                            <div class="row">
+                                <div class="img">
+                                    <img src="https://via.placeholder.com/200">
+                                </div>
+                                <div class="card-body">
+                                    <h5>ChatMe</h5>
+                                    <p>
+                                        기간 : 210727 ~ ing<br>
+                                        FE : jsp, jquery<br>
+                                        BE : springboot, MariaDB<br>
+                                    </p>
+                                    <p><small>개인 프로젝트</small></p>
+                                </div>
+                            </div>
+                            <div class="link-mask">
+                                <div class="link-mask-text">
+                                    <a class="btn" data="chatMe">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col backend">
+                        <div class="card">
+                            <div class="row">
+                                <div class="img">
+                                    <img src="images/java/photogram/photogram_mock.jpg">
+                                </div>
+                                <div class="card-body">
+                                    <h5>Photogram</h5>
+                                    <p>
+                                        기간 : 210705 ~ 210719<br>
+                                        FE : jsp, jquery<br>
+                                        BE : springboot, MariaDB<br>
+                                    </p>
+                                    <p><small>개인 프로젝트</small></p>
+                                </div>
+                            </div>
+                            <div class="link-mask">
+                                <div class="link-mask-text">
+                                    <a class="btn" data="photogram">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col backend">
+                        <div class="card">
+                            <div class="row">
+                                <div class="img">
+                                    <img src="images/java/zicBang/zicBang_mock.jpg">
+                                </div>
+                                <div class="card-body">
+                                    <h5>zicBang</h5>
+                                    <p>
+                                        기간 : 210630 ~ 210723<br>
+                                        FE : html, jquery<br>
+                                        BE : springboot
+                                    </p>
+                                    <p><small>개인 프로젝트</small></p>
+                                </div>
+                            </div>
+                            <div class="link-mask">
+                                <div class="link-mask-text">
+                                    <a class="btn" data="zicBang">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col backend">
+                        <div class="card">
+                            <div class="row">
+                                <div class="img">
+                                    <img src="images/java/covid/covid.PNG">
+                                </div>
+                                <div class="card-body">
+                                    <h5>COVID19 현황 크롤링</h5>
+                                    <p>
+                                        기간 : 210707<br>
+                                        FE : thymeleaf<br>
+                                        BE : springboot, mysql
+                                    </p>
+                                    <p><small>개인 프로젝트</small></p>
+                                </div>
+                            </div>
+                            <div class="link-mask">
+                                <div class="link-mask-text">
+                                    <a class="btn" data="covid">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col backend">
+                        <div class="card">
+                            <div class="row">
+                                <div class="img">
+                                    <img src="https://via.placeholder.com/200">
+                                </div>
+                                <div class="card-body">
+                                    <h5>29cm</h5>
+                                    <p>
+                                        기간 : 210606 ~ ing<br>
+                                        FE : react<br>
+                                        BE : springboot, mysql
+                                    </p>
+                                    <p><small>팀 프로젝트</small></p>
+                                </div>
+                            </div>
+                            <div class="link-mask">
+                                <div class="link-mask-text">
+                                    <a class="btn" data="29cm">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col backend">
+                        <div class="card">
+                            <div class="row">
+                                <div class="img">
+                                    <img src="images/java/freelec/main.PNG">
+                                </div>
+                                <div class="card-body">
+                                    <h5>스프링 부트와 aws로 혼자 웹 구현하기</h5>
+                                    <p>
+                                        FE : mustache<br>
+                                        BE : springboot, mysql, aws
+                                    </p>
+                                    <p><small>개인 프로젝트</small></p>
+                                </div>
+                            </div>
+                            <div class="link-mask">
+                                <div class="link-mask-text">
+                                    <a class="btn" data="freelec">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <samll class="copyright">© 2021. Jean Young </samll>
+        </footer>
+        <div class="popup">
+            <div class="wrapper">
+                <div class="loading"><img src="images/icons/loading.gif"></div>
+                <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+                <div class="slider">
+                    <div class="slider_wrapper">
+                    </div>
+                </div>
+                <div class="img"></div>
+                <div class="video"></div>
+                <div class="introduce">
+                    <h5 class="title"></h5>
+                    <div class="info"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

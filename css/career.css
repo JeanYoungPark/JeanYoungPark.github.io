@@ -1,0 +1,19 @@
+body.dark-mode .career-list .card {background:#151e29;}
+
+.career-list {padding:3rem;}
+.career-list .col {width:33.333%; ;padding-right:calc(1.5rem * .5);padding-left:calc(1.5rem * .5);margin-bottom:3rem;flex:0 0 auto;}
+.career-list .card {height:390px;position:relative;background:#fafafa;cursor:pointer;}
+.career-list .card .img {display:flex;justify-content:center;height: 200px;vertical-align:middle;overflow:hidden;flex:0 0 auto;}
+.career-list .card .img img {height:100%;}
+.career-list .card .card-body {padding:1rem;}
+.career-list .card .card-body h5 {font-size:1.125rem;}
+.career-list .card .card-body h5 small {font-weight:normal;}
+.career-list .card .card-body .info {display:flex;flex-direction: column;font-size:.875rem;}
+.career-list .card .card-body .info {margin-top:1rem;}
+
+.career-list .card .link-mask {position:absolute;left:0;top:0;width:100%;height:100%;visibility: hidden;transition:all 0.4s ease-in-out;}
+.career-list .card .link-mask .link-mask-link {position:absolute;width:100%;height:100%;top:0;left:0;z-index: 1000;}
+.career-list .card .link-mask .link-mask-text {justify-content:center;align-items:center;position:absolute;left:0;top:0;width:100%;height:100%;color:#fff;display:none;}
+.career-list .card .link-mask .link-mask-text .btn {position:absolute;top:50%;margin-top:-20px;font-weight:bold;padding:.375rem 1rem;height:2.5rem;transition:all 0.4s ease-in-out;font-size:1rem;color:#fff;background-color:#4f4f4f;border-radius:5px;}
+.career-list .card:hover .link-mask {visibility: visible;background:rgba(41, 41, 41, 0.4);}
+.career-list .card:hover .link-mask-text {display:flex;}

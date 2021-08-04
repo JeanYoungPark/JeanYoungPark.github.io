@@ -1,47 +1,129 @@
 $(document).ready(function () {
 
-  //메뉴클릭시 같은 컨텐츠 노출
-  $("#menu li").on("click", function() {
-    var cl = $(this).attr("class");
+  var slide;
 
-    $("#menu li").removeClass("on");
-    $(this).addClass("on");
-
-    $(".division").hide();
-    $("#" + cl).show();
+  //dark mode
+  $('#darkmode').on('change',function(){
+    if($(this).prop('checked')){
+      $('body').addClass('dark-mode');
+    }else {
+      $('body').removeClass('dark-mode');
+    }
   });
 
-  //클릭버튼 클릭시 슬라이드 노출
-  $(".show_slide").on("click", function() {
-    var slider = $(this).parents(".container").find(".slider");
-    var video = $(this).parents(".container").find("video");
+  //portfolio tabs
+  $('.tabs li').on('click',function(){
+    var role = $(this).attr('data-filter');
+    $('.tabs li').removeClass('active');
+    $(this).addClass('active');
 
-    if($(this).find("i").hasClass("fa-angle-down")){
-      $(this).find("i").removeClass("fa-angle-down");
-      $(this).find("i").addClass("fa-angle-up");
+    if(role == 'all'){
+      $('.project-cards .col').show();  
     }else{
-      $(this).find("i").removeClass("fa-angle-up");
-      $(this).find("i").addClass("fa-angle-down");
-    }
-
-    slider.toggle();
-    
-    if($(this).attr("data") == 0) {
-      $(this).attr("data",1);
-      $($(slider).find(".slider_wrapper")).bxSlider({
-        captions:true,
-        pager:false
-      });
-    }
-
-    if(video.length){
-      document.getElementById(video.attr('id')).pause();
+      $('.project-cards .col').hide();
+      $('.project-cards .col.'+role).show();
     }
   });
 
-  //top버튼 클릭시 최상단으로 이동
-  $("#top_btn").on("click", function() {
-    $('html, body').stop().animate({scrollTop: 0}, 1000);
+  //프로젝트 번호 클릭
+  $('.project-cards .link-mask .btn').on('click',function(){
+
+    var $this = $(this);
+
+    $.ajax({
+      url:'https://jeanyoungpark.github.io/data.json',
+      method:'get',
+      datatype:'json',
+      beforeSend: function(){
+        $('.popup .loading').css('display','flex');
+      },complete:function(){
+        $('.popup .loading').css('display','none');
+      },success:function(datas){
+        var project = $this.attr('data');
+        var data;
+        var slide = "";
+        var video = "";
+        var info = "";
+        
+        $.each(datas,(subject, item) => {
+          if(subject == project){
+            data = item;
+            return;
+          }
+        });
+
+        //title
+        if(data.name){
+          $('.popup .title').text(data.name);
+        }
+        
+        //period
+        if(data.period){
+          info += `<span>기간 : ${data.period}</span>`;
+        }
+
+        //git
+        if(data.git){
+          info += `<span>git : <a href="${data.git}" target="_blank">${data.git}</a></span>`;
+        }
+
+        //fe
+        if(data.fe){
+          info += `<span>FE : ${data.fe}</span>`;
+        }
+
+        //be
+        if(data.be){
+          info += `<span>BE : ${data.be}</span>`;
+        }
+
+        //description
+        if(data.description){
+          info += `<p>${data.description}</p>`;
+        }
+
+        $('.popup .info').html(info);
+
+        if(data.slide.length > 0) {
+          //as image
+          if(data.slide.length == 1) {
+            $('.popup .img').html(`<img src="images/${data.lang}/${project}/${data.slide[0]}">`);
+          }else {
+            //as slide
+            for(var i = 0; i < data.slide.length; i++){
+              slide += `<div><img src="images/${data.lang}/${project}/${data.slide[i]}"></div>`;
+            }
+
+            $('.popup .slider_wrapper').html(slide);
+            slideSt();
+          }
+        }
+      }
+    });
+
+    $('.popup').css("display","flex");
+
   });
+
+  //팝업 종료
+  $('.popup .close').on('click',function(){
+    $('.popup .slider_wrapper').html('');
+    $('.popup .img').html('');
+    $('.popup .video').html('');
+    $('.popup .info').html('');
+    $('.popup').hide();
+
+    if(slide) slide.destroySlider();
+  });
+
+  //슬라이드 시작함수
+  var slideSt = function(){
+    slide = $('.slider_wrapper').bxSlider({
+      captions:true,
+      pager:false
+    });
+  };
+
+  
 
 });
