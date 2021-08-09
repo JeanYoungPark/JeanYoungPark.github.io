@@ -11,6 +11,11 @@ $(document).ready(function () {
     }
   });
 
+  //toggler
+  $('.navbar-toggler').on('click',function(){
+    $('#navigation').slideToggle();
+  });
+
   //portfolio tabs
   $('.tabs li').on('click',function(){
     var role = $(this).attr('data-filter');

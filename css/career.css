@@ -17,3 +17,11 @@ body.dark-mode .career-list .card {background:#151e29;}
 .career-list .card .link-mask .link-mask-text .btn {position:absolute;top:50%;margin-top:-20px;font-weight:bold;padding:.375rem 1rem;height:2.5rem;transition:all 0.4s ease-in-out;font-size:1rem;color:#fff;background-color:#4f4f4f;border-radius:5px;}
 .career-list .card:hover .link-mask {visibility: visible;background:rgba(41, 41, 41, 0.4);}
 .career-list .card:hover .link-mask-text {display:flex;}
+
+@media (max-width:991px){
+    .career-list .col {width:50%;}
+}
+
+@media (max-width:575px){
+    .career-list .col {width:100%;}
+  }
