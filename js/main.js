@@ -31,7 +31,7 @@ $(document).ready(function () {
   });
 
   //프로젝트 번호 클릭
-  $('.project-cards .link-mask .btn').on('click',function(){
+  $('.project-cards .link-mask .btn, .card-body .btn').on('click',function(){
 
     var $this = $(this);
 

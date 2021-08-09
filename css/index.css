@@ -5,13 +5,13 @@
 .about-me-section .container .col h2 {font-size:3rem;margin-bottom:.25rem;}
 .about-me-section .container .col .tagline {font-size:1.5rem;font-weight:300;margin-bottom:1rem;}
 .about-me-section .container .col .bio {margin-bottom:1.5rem;}
-.about-me-section .container .col .bio a {color:#b2c8e6}
-.about-me-section .container .col .btn {font-size:1rem;font-weight:bold;padding:.375rem 1rem;height:2.5rem;transition:all 0.4s ease-in-out;background:#b2c8e6;color:#fff;border-radius: .25rem;}
-.about-me-section .container .col .btn:hover {background:#4e7fc2}
+.about-me-section .container .col .bio a {color:var(--main-color)}
+.about-me-section .container .col .btn {font-size:1rem;font-weight:bold;padding:.375rem 1rem;height:2.5rem;transition:all 0.4s ease-in-out;background:var(--main-color);color:#fff;border-radius: .25rem;}
+.about-me-section .container .col .btn:hover {background:var(--sub-color)}
 .about-me-section .container .col img {max-width:300px;}
 
 .section-title {font-size:2rem;position:relative;padding-left:1.5rem;margin-bottom:3rem;}
-.section-title:before {content:'';display:inline-block;width:5px;height:100%;background:#b2c8e6;position:absolute;left:0;top:0;}
+.section-title:before {content:'';display:inline-block;width:5px;height:100%;background:var(--main-color);position:absolute;left:0;top:0;}
 
 .overview-section .row .item {margin-bottom:2rem; padding-right:calc(1.5rem * .5); padding-left:calc(1.5rem * .5);}
 .overview-section .row .item .item-icon {display:flex; height:1.875rem; margin-bottom:.5rem;}
@@ -19,8 +19,8 @@
 .overview-section .row .item h3 {font-size:1rem;margin-bottom:.5rem;}
 
 .featured-section .view-btn {text-align:center;padding:1rem 0;}
-.featured-section .view-btn a {display:inline-block;color:#fff; font-weight:bold;padding:.375rem 1rem;height:2.5rem;transition:all 0.3s ease-in-out; font-size:1rem; background:#b2c8e6;border-radius: .25rem;}
-.featured-section .view-btn a:hover {background:#4e7fc2}
+.featured-section .view-btn a {display:inline-block;color:#fff; font-weight:bold;padding:.375rem 1rem;height:2.5rem;transition:all 0.3s ease-in-out; font-size:1rem; background:var(--main-color);border-radius: .25rem;}
+.featured-section .view-btn a:hover {background:var(--sub-color)}
 
 @media (min-width:992px){
   .about-me-section {padding:3rem;}
