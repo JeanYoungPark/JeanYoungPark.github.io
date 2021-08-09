@@ -15,7 +15,7 @@
 
 .overview-section .row .item {margin-bottom:2rem; padding-right:calc(1.5rem * .5); padding-left:calc(1.5rem * .5);}
 .overview-section .row .item .item-icon {display:flex; height:1.875rem; margin-bottom:.5rem;}
-.overview-section .row .item .item-icon img {margin-right:.5rem;}
+.overview-section .row .item .item-icon img {margin-right:.5rem;height:100%;width:auto;}
 .overview-section .row .item h3 {font-size:1rem;margin-bottom:.5rem;}
 
 .featured-section .view-btn {text-align:center;padding:1rem 0;}
