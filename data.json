@@ -62,7 +62,7 @@
     "29cm":{
         "name":"29cm",
         "lang":"java",
-        "period":"210606 ~ ing",
+        "period":"210606 ~ 210820",
         "git":"",
         "fe":"react",
         "be":"springboot, mysql",
