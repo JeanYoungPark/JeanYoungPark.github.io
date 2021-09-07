@@ -2,7 +2,7 @@
     "chatMe":{
         "name":"ChatMe",
         "lang":"java",
-        "period":"210727 ~ ing",
+        "period":"210727 ~ 210906",
         "git":"https://github.com/JeanYoungPark/chatMe.git",
         "fe":"jsp, jquery",
         "be":"springboot, mariadb",
