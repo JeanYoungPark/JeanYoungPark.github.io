@@ -89,6 +89,7 @@ $(document).ready(function () {
 
         $('.popup .info').html(info);
 
+        //슬라이드나 영상 둘 중 하나만
         if(data.slide.length > 0) {
           //as image
           if(data.slide.length == 1) {
@@ -101,6 +102,10 @@ $(document).ready(function () {
 
             $('.popup .slider_wrapper').html(slide);
             slideSt();
+          }
+        }else {
+          if(data.video.length > 0) {
+            $('.popup .video').html(`<video style="width:100%" controls muted> <source src='images/${data.lang}/${project}/${data.video}' type='video/mp4'> </video>`);
           }
         }
       }
