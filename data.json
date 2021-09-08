@@ -27,7 +27,7 @@
             "myStory.png",
             "likeComment.png"
         ],
-        "video":"photogram.mp4",
+        "video":"",
         "description":"인스타그램 클론 프로젝트로 스프링 시큐리티를 이용하여 회원가입과 로그인을 제어하고, 인스타그램과 같이 팔로우, 좋아요, 게시글 작성 그리고 댓글 작성 등의 기능을 제공한다."
     },
     "zicBang":{
