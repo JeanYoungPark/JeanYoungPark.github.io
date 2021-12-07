@@ -88,5 +88,17 @@
         ],
         "video":"",
         "description":"구글, 네이버 로그인을 할 수 있고 게시글 작성, 수정, 삭제가 가능하고 aws와 travisCI를 이용하여 배포 자동화 되도록 해보았다. 과정이 쉽지는 않았지만 웹 서버 구축에 대해 조금 더 자세히 알게 된 것 같다."
+    },
+    "smsTemplate":{
+        "name":"문자 및 알림 템플릿 개발",
+        "lang":"php",
+        "period":"약 2개월",
+        "git":"",
+        "fe":"html, css, jquery",
+        "be":"php, mysql",
+        "slide": [
+        ],
+        "video":"",
+        "description":"관리자가 원하는 DB에 CURD액션이 일어날때 발송되는 발신 내용, 수신자, 발신자 등을 쉽게 관리 할 수 있도록 문자 템플릿 개발하였다."
     }
 }
